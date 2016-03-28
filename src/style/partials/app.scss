@@ -1,0 +1,357 @@
+// Site styles
+
+// Colors
+.bg_color_001 {background: #ed9900;} // Orange
+.bg_color_002 {background: #d5211d;} // Red
+.bg_color_003 {background: #42b01c;} // Green
+.bg_color_004 {background: #0e8ad8;} // Blue
+
+html {
+  font-size:100%; // for ie
+  width: 100%;
+  height: 100%;
+} 
+body {
+  width: 100%;
+  height: 100%; 
+  background: #232323;
+  color: #fff;
+  font-size: 0.625em; 
+  font-family: 'PT Sans', sans-serif;
+  background: url(/img/background/bg_01.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+// Tipography
+
+h1 {
+  font-size: 1.6em;
+  margin: 0.833em;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.333em;
+  margin-bottom: 1.25em;
+}
+
+a {color: #fff;}
+
+
+
+
+// Header
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 9em;
+  z-index: 2;
+
+  .logo {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -4.5em auto auto -4.5em;
+    width: 9em;
+    height: 9em;
+    background: url(/img/logo.png) center center no-repeat;
+    background-size: cover;
+  } //logo
+} //header
+
+
+// Main container
+.main-nav {
+  position: absolute;
+  top: 9em;
+  right: 5em;
+  bottom: 7em;
+  left: 5em;
+  z-index: 1;
+  outline: none;
+
+  .main-nav-btn {
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    text-decoration: none;
+
+    background-color: #31be00;
+    background-position: center center;
+    background-size: 53%;
+    background-repeat: no-repeat;
+
+    &.nav-menu {
+      top: 0.6em;
+      left: 0;
+      width: 144px;
+      height: 144px;
+      background-color: #31be00;
+      background-image: url(/img/icons/nav-menu-icon.png);
+    }
+    &.nav-tour {
+      top: 0;
+      left: 16em;
+      width: 10em;
+      height: 10em;
+      background-color: #0241e8;
+      background-image: url(/img/icons/nav-tour-icon.png); 
+    }
+    &.nav-news {
+      top: 16.2em;
+      left: 0.2em;
+      width: 9.3em;
+      height: 9.3em;
+      background-color: #e31f1b;
+      background-image: url(/img/icons/nav-news-icon.png);
+
+    }
+    &.nav-tables {
+      top: 12em;
+      left: 14em;
+      height: 11.5em;
+      width: 11.5em;
+      background-color: #fea606;
+      background-image: url(/img/icons/nav-tables-icon.png);
+    }
+    &.nav-contact {
+      top: 23em;
+      left: 9em;
+      background-color: #1492e1;
+      background-image: url(/img/icons/nav-contact-icon.png);
+    }
+    &.nav-blog {
+      top: 28em;
+      left: 1em;
+      background-color: #00b17f;
+      background-image: url(/img/icons/nav-menu-icon.png);
+    }
+    &.nav-cam {
+      top: 29em;
+      left: 17em;
+      background-color: #e30471;
+      background-image: url(/img/icons/nav-blog-icon.png);
+    }
+    &.nav-events {
+      top: 34em;
+      left: 8em;
+      background-color: #921da2;
+      background-image: url(/img/icons/nav-events-icon.png);
+    }
+
+  }
+}
+
+// Main container
+.container {
+  border-radius: 4.8em;
+  position: absolute;
+  top: 9em;
+  right: 5em;
+  bottom: 7em;
+  left: 5em;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 1px 0 60px rgba(0,0,0, .5);
+  // background: #fff;
+
+  .container-slide {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .intro-video {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+  .intro-text {
+    position: absolute;
+    text-align: center;
+    padding-top: 20%;
+    margin-top: -40px;
+    z-index: 2;
+    width: 100%;
+    font-size: 4.85em;
+    font-weight: bold;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.2);
+  }
+
+  .sidebar {
+    width: 21%;
+    float: left;
+    overflow-y: scroll; // TODO: надо исправить
+    position: relative;
+    box-sizing: border-box;
+    padding-bottom: 9.6em;
+
+    &.no-padding {
+      padding: 0;
+    }
+
+    .contacts {
+      text-align: center;
+      font-size: 1.6em;
+      padding: 6em 0 0 0;
+      box-sizing: border-box;
+      font-style: normal;
+
+      .address {
+        margin-bottom: 3.5em;
+      }
+      .phone {
+        margin-bottom: 3.5em;
+      }
+      .email {
+        margin-bottom: 3.5em;
+      }
+
+      strong {
+        font-size: 1.3em;
+      }
+    } //contact
+
+    .nav-title {
+      font-size: 3em;
+      // margin: 3.05em 0 1em;
+      margin: 1.05em 0 1em;
+    }
+    .sub_nav {
+      text-align: center;
+      margin: 2.8em 0 0;
+      .nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 3.5em;
+        .nav-item {
+          font-size: 1.9em;
+          margin: 0 0 .56em;
+          padding: 0;
+
+          &.active, &:hover {
+            background: rgba(0,0,0, 0.2);
+            border-radius: 1em;
+          }
+
+          .nav-item-link {
+            display: block;
+            padding: 0.4em;
+            text-decoration: none;
+            outline: none;
+          } //nav-item-link
+        } //nav-item
+      } //nav
+    } //sub_nav
+
+    .action-btn {
+      position: absolute;
+      height: 4em;
+      background: rgba(0,0,0, 0.2);
+      width: 100%;
+      bottom: 0;
+      text-align: center;
+      padding: 0.6em;
+      font-size: 2.4em;
+      font-weight: bold;
+      color: #fff;
+      box-sizing: border-box;
+      text-decoration: none;
+      outline: none;
+      display: none;
+    } //action
+
+  } //sidebar
+
+  .content {
+    position: relative;
+    width: 79%;
+    float: left;
+
+    .content-slider {
+      .slide-item {
+        position: relative;
+        width: 100%;
+        outline: none;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      } //slide-item
+    } //content-slider
+    .content-media {
+      .menu-item-video {
+        height: 100%;
+      } //menu-item-video
+    } //content-media
+  } //content
+
+} //container
+
+// Footer
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 7em;
+  padding: 2.5em 0;
+  box-sizing: border-box;
+  text-align: center;
+
+  .company_name {
+    display: inline-block;
+    width: 16.4em;
+    font-size: 1.3em;
+  } //company_name
+
+  .bottom_nav {
+    position: relative;
+    display: inline-block;
+    font-size: 1.3em;
+    width: 20em;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 15px;
+      background: #fff;
+      left: 0;
+      top: 50%;
+      margin-top: -7px;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 15px;
+      background: #fff;
+      right: 0;
+      top: 50%;
+      margin-top: -7px;
+    }
+
+    .nav {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      .nav-item {
+        display: inline-block;
+        margin: 0 8px;
+        padding: 0;
+        .nav-item-link {
+          text-decoration: underline;
+        } //a
+      } //li
+    } //ul
+  } //bottom_nav
+
+  .created_by {
+    display: inline-block;
+    width: 16.4em;
+    font-size: 1.3em;
+  } //created_by
+} //footer
