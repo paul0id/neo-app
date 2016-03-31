@@ -64,6 +64,28 @@ a {color: #fff;}
 
 
 // Main container
+
+.main-nav-sw-btn {
+  position: absolute;
+  top: 9em;
+  left: 5em;
+  width: 5em;
+  height: 5em;
+  margin-top: -6em;
+  border-radius: 50%;
+  z-index: 2;
+  outline: 0;
+
+  background-color: #fff;
+  background-position: center center;
+  background-size: 43%;
+  background-repeat: no-repeat;
+
+  &.sw-open {
+    background-image: url(/img/icons/nav-close-icon.png);
+  }
+}
+
 .main-nav {
   position: absolute;
   top: 9em;
@@ -71,18 +93,31 @@ a {color: #fff;}
   bottom: 7em;
   left: 5em;
   z-index: 1;
-  outline: none;
 
   .main-nav-btn {
     display: block;
     position: absolute;
     border-radius: 50%;
     text-decoration: none;
+    outline: none;
 
     background-color: #31be00;
     background-position: center center;
     background-size: 53%;
     background-repeat: no-repeat;
+
+    box-shadow: inset 0px 24px 30px 0px rgba(50, 50, 50, 0.25);
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 50%;
+      box-shadow: 0px 20px 30px 0px rgba(50, 50, 50, 0.3);
+    }
 
     &.nav-menu {
       top: 0.6em;
@@ -118,30 +153,51 @@ a {color: #fff;}
       background-image: url(/img/icons/nav-tables-icon.png);
     }
     &.nav-contact {
-      top: 23em;
-      left: 9em;
+      top: 22.7em;
+      left: 8.3em;
+      width: 9em;
+      height: 9em;
       background-color: #1492e1;
       background-image: url(/img/icons/nav-contact-icon.png);
     }
     &.nav-blog {
       top: 28em;
-      left: 1em;
+      left: 0.6em;
+      width: 7.5em;
+      height: 7.5em;
       background-color: #00b17f;
-      background-image: url(/img/icons/nav-menu-icon.png);
+      background-image: url(/img/icons/nav-blog-icon.png);
     }
     &.nav-cam {
       top: 29em;
-      left: 17em;
+      left: 16.1em;
+      height: 9.5em;
+      width: 9.5em;
       background-color: #e30471;
-      background-image: url(/img/icons/nav-blog-icon.png);
+      background-image: url(/img/icons/nav-cam-icon.png);
     }
     &.nav-events {
-      top: 34em;
+      top: 34.2em;
       left: 8em;
+      height: 8.2em;
+      width: 8.2em;
       background-color: #921da2;
       background-image: url(/img/icons/nav-events-icon.png);
     }
 
+    &.set-background {
+      bottom: 12em;
+      left: 0.1em;
+      height: 5.6em;
+      width: 5.6em;
+      background-size: 70%;
+      background-color: #fff;
+      background-image: url(/img/icons/set-bg-icon.png);
+    }
+
+  }
+  .search-form {
+    display: none;
   }
 }
 
