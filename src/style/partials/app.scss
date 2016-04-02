@@ -108,6 +108,12 @@ a {color: #fff;}
 
     box-shadow: inset 0px 24px 30px 0px rgba(50, 50, 50, 0.25);
 
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
     &:before {
       content: '';
       position: absolute;
