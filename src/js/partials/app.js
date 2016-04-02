@@ -71,19 +71,8 @@ $('.content-slider').on('afterChange', function(event, slick, currentSlide){
 });
 
 $( document ).ready(function() {
-  $('.intro-video').get(0).play();
-  $('.menu-item-video').get(0).play();
+  $('video').get(0).play();
 });
-
-
-
-
-
-
-
-
-
-
 
 
 
