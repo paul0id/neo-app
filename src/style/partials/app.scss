@@ -267,42 +267,64 @@ a {color: #fff;}
 
       &.short-title {
         margin-bottom: 0.6em;
-      }
-    }
+      } // sidebar-title.short-title
+    } // sidebar-title
 
     .contacts {
       text-align: center;
-      font-size: 1.6em;
-      padding: 6em 0 0 0;
+      font-size: 1.66em;
+      padding: 4.3em 0 0;
       box-sizing: border-box;
       font-style: normal;
+      line-height: 1.3em;
 
-      .address {
-        margin-bottom: 3.5em;
-      }
+      .address {margin-bottom: 2.9em;}
       .phone {
-        margin-bottom: 3.5em;
+        margin-bottom: 3.2em;
+        line-height: 0.5em;
       }
       .email {
-        margin-bottom: 3.5em;
+        margin-bottom: 3.3em;
+        line-height: 0.5em;
+      }
+      strong {
+        font-size: 1.26em;
+        font-weight: bold;
+        line-height: 1.8em;
       }
 
-      strong {
-        font-size: 1.3em;
-      }
+      .social-links {
+        text-align: center;
+        .social-links-btn {
+          width: 2.2em;
+          height: 2.2em;
+          display: inline-block;
+          background: #fff;
+          border-radius: 50%;
+          text-decoration: none;
+          margin: .4em;
+          color: #0e8ad8;
+
+          .fa {
+            font-size: 1.4em;
+            line-height: 1.7em;
+          } // fa icons
+        } // social-links-btn
+      } // social-links
+
     } //contact
 
     .nav-title {
       font-size: 2em;
       margin: 1.7em 0 1.2em;
       font-weight: normal;
-    }
+    } // nav-title
     .category-title {
       font-size: 3em;
       margin: 0 0 .66em;
       line-height: 1.8em;
       font-weight: bold;
-    }
+    } // category-title 
     .sub_nav {
       text-align: center;
       padding: 2.8em 0 9.6em;
@@ -401,9 +423,9 @@ a {color: #fff;}
         } // cart-count-value
       } // product-count
     } // product-info
-    .reserve-form {
+    .reserve-form, .contact-form {
       margin: 4em 3em;
-    } //reserve-form
+    } // reserve-form, contact-form
     .selected-table-box {
       margin: 5em 3em;
       .title {
@@ -470,7 +492,7 @@ a {color: #fff;}
     .action-btn {
       position: absolute;
       left: 0;
-      height: 4em;
+      height: 4.2em;
       background: rgba(0,0,0, 0.4);
       width: 100%;
       bottom: 0;
@@ -483,6 +505,7 @@ a {color: #fff;}
       text-decoration: none;
       outline: none;
       border: 0;
+      &.centered {line-height: 3em;}
     } //action
 
   } //sidebar
