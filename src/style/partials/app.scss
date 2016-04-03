@@ -1,12 +1,30 @@
 // Site styles
 
 // Colors
-.bg_color_000 {background: #000;} // Black
-.bg_color_001 {background: #ed9900;} // Orange
-.bg_color_002 {background: #d5211d;} // Red
-.bg_color_003 {background: #42b01c;} // Green
-.bg_color_004 {background: #0e8ad8;} // Blue
-.bg_color_005 {background: #c25905;} // Brown
+.bg_color_000 {
+  background: #000;
+  .social-links-btn {color: #000 !important;}
+} // Black
+.bg_color_001 {
+  background: #ed9900;
+  .social-links-btn {color: #ed9900 !important;}
+} // Orange
+.bg_color_002 {
+  background: #d5211d;
+  .social-links-btn {color: #d5211d !important;}
+} // Red
+.bg_color_003 {
+  background: #42b01c;
+  .social-links-btn {color: #42b01c !important;}
+} // Green
+.bg_color_004 {
+  background: #0e8ad8;
+  .social-links-btn {color: #0e8ad8 !important;}
+} // Blue
+.bg_color_005 {
+  background: #c25905;
+  .social-links-btn {color: #c25905 !important;}
+} // Brown
 
 html {
   font-size:100%; // for ie
@@ -293,26 +311,32 @@ a {color: #fff;}
         line-height: 1.8em;
       }
 
-      .social-links {
-        text-align: center;
-        .social-links-btn {
-          width: 2.2em;
-          height: 2.2em;
-          display: inline-block;
-          background: #fff;
-          border-radius: 50%;
-          text-decoration: none;
-          margin: .4em;
-          color: #0e8ad8;
-
-          .fa {
-            font-size: 1.4em;
-            line-height: 1.7em;
-          } // fa icons
-        } // social-links-btn
-      } // social-links
-
     } //contact
+
+    .social-links {
+      text-align: center;
+
+      .social-links-title {
+        font-size: 1.6em;
+        font-weight: normal;
+      }
+      .social-links-btn {
+        font-size: 1.6em;
+        width: 2.2em;
+        height: 2.2em;
+        display: inline-block;
+        background: #fff;
+        border-radius: 50%;
+        text-decoration: none;
+        margin: .4em;
+        color: #000;
+
+        .fa {
+          font-size: 1.4em;
+          line-height: 1.7em;
+        } // fa icons
+      } // social-links-btn
+    } // social-links
 
     .nav-title {
       font-size: 2em;
@@ -331,6 +355,10 @@ a {color: #fff;}
       // padding: 2.8em 0;
       box-sizing: border-box;
       overflow-y: scroll; // TODO: надо исправить
+
+      &.events-nav {
+        margin-top: 4em;
+      }
 
       &.inner {
         padding-top: 6em;
@@ -423,9 +451,6 @@ a {color: #fff;}
         } // cart-count-value
       } // product-count
     } // product-info
-    .reserve-form, .contact-form {
-      margin: 4em 3em;
-    } // reserve-form, contact-form
     .selected-table-box {
       margin: 5em 3em;
       .title {
@@ -497,8 +522,9 @@ a {color: #fff;}
       width: 100%;
       bottom: 0;
       text-align: center;
-      padding: 0.6em;
+      padding: 0.7em;
       font-size: 2.4em;
+      line-height: 1.3em;
       font-weight: bold;
       color: #fff;
       box-sizing: border-box;
@@ -680,6 +706,9 @@ a {color: #fff;}
 } //footer
 
 // Forms
+.form {
+  margin: 4em 3em;
+}
 .text-field {
   width: 100%;
   display: block;
